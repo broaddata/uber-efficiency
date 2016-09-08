@@ -25,19 +25,33 @@ The main data set represents information collected over a 90 day period beginnin
 I merged the data into one final dataset. The most imporants fields included the following. They are described as follows:
 
 **Date_Time_From** - The date and time I began my driving shift
+
 **Date_Time_To** - The datae and time I ended my driving shift
+
 **work_time** - The difference between Date_Time_From and Date_Time_To encapsulating my shift hours. 
+
 **Trip_Time** - Time acquired from Uber that marks the time spent on fare producing trips.
+
 **Trip_time_Percent** - Percentage of time spent on trips relative to work_time
+
 **Off-Trip_Time** - The difference between my Work_Time and Trip_Time. This is the time spent on my shift in which I was not on a trip.
+
 **Odometer_From** - Odometer mile reading when I began a shift
+
 **Odometer_To** - Odometer mile reading when I ended a shift
+
 **Total_Miles** - The difference between Odometer_From and Odometer_To marking the total miles driven during a shift.
+
 **Trip_Mileage** - Total miles recorded while on fare trips. This was provided by Uber
+
 **Trip_Mileage_Percent** - Percentage of Trip_Mileage relative to Total_Miles
+
 **Off_Trip_Mileage** - The difference between Total_Miles and Trip_Mileage.
+
 **Total_Payment** - What I was paid from fares during my shifts.
+
 **Work_Time_converted** - Work_Time converted to a decimal number, necessary for calculating Earnings_Per_Hour 
+
 **Earnings_Per_Hour** - How much money I made per hour. The result of Total_Payment divided by Work_Time_converted
 
 ## What are its limitations i.e. what are some questions that you cannot answer with this data set?
